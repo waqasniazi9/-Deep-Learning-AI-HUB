@@ -1,0 +1,9 @@
+# Binder Configuration
+# This file tells Binder what dependencies to install
+
+# System dependencies (optional)
+# graphviz
+# git
+
+python
+3.10

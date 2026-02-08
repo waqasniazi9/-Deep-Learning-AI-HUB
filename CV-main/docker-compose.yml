@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+
+  voila:
+    build: .
+    ports:
+      - "8867:8867"
+    volumes:
+      - .:/app
+    command: voila --VoilaConfiguration.resources='{"inlineJS": false}' /app --port=8867

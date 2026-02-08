@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "🚀 Deep Learning Notebook Hub - Setup & Launch"
+echo "================================================"
+
+# Check if requirements are installed
+echo "📦 Installing dependencies..."
+pip install -r requirements.txt
+
+echo ""
+echo "✅ Setup complete!"
+echo ""
+echo "Choose how to run:"
+echo "1️⃣  Streamlit Dashboard (Recommended): streamlit run app.py"
+echo "2️⃣  Voila Web Apps: voila notebook_name.ipynb"
+echo "3️⃣  Jupyter Notebook: jupyter notebook"
+echo "4️⃣  Docker Compose: docker-compose up"
+echo ""
+echo "Press Ctrl+C to stop any running service"
