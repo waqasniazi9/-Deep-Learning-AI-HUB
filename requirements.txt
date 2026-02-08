@@ -1,13 +1,35 @@
-streamlit>=1.28.0
+# Web Framework
+Flask>=2.3.0
+Flask-Caching>=2.0.2
+Flask-CORS>=4.0.0
+Werkzeug>=2.3.0
+
+# Deep Learning & ML
 torch>=2.0.0
 torchvision>=0.15.0
 numpy>=1.24.0
-matplotlib>=3.7.0
-pillow>=9.0.0
-pandas>=1.5.0
-scikit-learn>=1.3.0opencv-python>=4.8.0
+scikit-learn>=1.3.0
 scipy>=1.11.0
+
+# Data & Visualization
+pandas>=1.5.0
+matplotlib>=3.7.0
+Pillow>=9.0.0
 plotly>=5.16.0
+
+# Development & Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+requests>=2.31.0
+gunicorn>=21.0.0
+
+# Jupyter & Interactive
 jupyter>=1.0.0
 notebook>=6.5.0
 ipython>=8.14.0
+jupyterlab>=4.0.0
+
+# Optional: GPU optimization
+# tensorflow>=2.13.0  # For alternative deep learning
+# xgboost>=2.0.0     # For gradient boosting
+# wandb>=0.15.0      # For experiment tracking
